@@ -6,8 +6,17 @@ html, body{
     padding: 0;
 }
 
+h2{
+    font-style: italic;
+}
+
 *{
     font-family: 'Readex Pro', sans-serif;
+}
+
+.primary-title {
+    font-size: 90px;
+    color: #fff;
 }
 
 .primary-button{
@@ -91,7 +100,11 @@ nav .logo-container .logo{
         to bottom,
         rgba(0, 0, 0, 0.65) 0%,
         rgba(0, 0, 0, 0) 100%
-    );
+    ), url('images/screen_tinder.webp')
+}
+
+.home{
+    margin-top: 30vh;
 }
 
 
@@ -113,3 +126,16 @@ nav .logo-container .logo{
 .auth-modal .close-icon{
     float: right;
 }
+
+.auth-modal form {
+display: flex;
+flex-direction: column;
+}
+
+.auth-modal input[type=email],
+.auth-modal input[type=password]{
+    padding: 8px;
+    margin: 8px;
+    font-size: 17px;
+}
+
