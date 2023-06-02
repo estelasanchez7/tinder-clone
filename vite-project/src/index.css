@@ -220,3 +220,60 @@ background-color:#c24b71;
 .onboarding form .photo-container img {
   width: 100%
 }
+
+/* --- DASHBOARD --- */
+.dashboard{
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard .swipe-container{
+width: 70%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.swipe {
+  position: absolute;
+}
+
+.dashboard .card-container {
+  width: 400px;
+  height: 650px;
+}
+
+.card {
+  width: 400px;
+  height: 650px;
+  box-shadow: 0px 0px 20px 00px rgba(0,0,0,0.20);
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card h3 {
+  margin-top: 0;
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+  color: #fff;
+}
+
+.dashboard .swipe-info{
+  position: absolute;
+  bottom: 0;
+  padding: 0px;
+}
+
+/* --- Chat Container --- */
+.chat-container {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+  rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  width: 30%;
+  text-align: left;
+  z-index: 1;
+}
