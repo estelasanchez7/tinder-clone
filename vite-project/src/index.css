@@ -141,6 +141,10 @@ nav .logo-container .logo {
 
 /* --- OnBoarding --- */
 
+.onboarding {
+  border-top: solid 1px rgb(213, 213, 213);
+}
+
 .onboarding form {
   display: flex;
   justify-content: center;
@@ -151,6 +155,7 @@ nav .logo-container .logo {
   flex-direction: column;
   padding: 20px;
   width: 35%;
+  text-align: start;
 }
 
 .onboarding form input {
@@ -159,6 +164,10 @@ nav .logo-container .logo {
   font-size: 15px;
   border: solid 2px rgb(219, 219, 219);
   border-radius: 10px;
+}
+
+.onboarding form label {
+  margin: 10px 0;
 }
 
 .onboarding form .multiple-input-container {
@@ -177,10 +186,37 @@ margin-right: 10px;
 }
 
 .onboarding form .multiple-input-container label {
-padding: 10px;
-border: solid 2px rgb(144, 144, 144);
-border-radius: 10px;
-background-repeat: 10px;
-transition: all 0.3s;
-margin-right: 10px;
+  padding: 10px;
+  border: solid 2px rgb(144, 144, 144);
+  border-radius: 10px;
+  transition: all 0.3s;
+  margin-right: 10px;
+}
+
+.onboarding form input[type="radio"] {
+  display: none;
+}
+
+.onboarding form input[type="number"] {
+  width: 10%;
+}
+
+.onboarding form input[type="checkbox"] {
+  width: 10%;
+}
+
+.onboarding form input[type="radio"]:checked + label {
+border:solid 2px rgb(221, 39, 22);
+}
+
+.onboarding form input[type="submit"]:hover{
+  background-color: rgb(235, 235, 235);
+}
+
+.onboarding form input[type="submit"]:active{
+background-color:#c24b71;
+}
+
+.onboarding form .photo-container img {
+  width: 100%
 }
