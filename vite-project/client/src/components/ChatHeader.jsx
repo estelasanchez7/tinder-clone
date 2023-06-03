@@ -3,14 +3,13 @@ const ChatHeader = () => {
     <div className="chat-container-header">
       <div className="profile">
         <div className="img-container">
-          <img src=""/>
+          <img src="" />
+          </div>
+          <h3>UserName</h3>
         </div>
-        <h3>UserName</h3>
         <i className="log-out-icon">⇦</i>
-      </div>
+      </div>  
+  );
+};
 
-    </div>
-  )
-}
-
-export default ChatHeader
+export default ChatHeader;

@@ -1,6 +1,6 @@
 const MatchesDisplay = () => {
   return (
-    <div className="matches-display">MatchesDisplay</div>
+    <div className="matches-display"></div>
   )
 }
 
