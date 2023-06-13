@@ -7,7 +7,9 @@ import OnBoarding from "./routes/Onboarding";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+
 const router = createBrowserRouter([
+  
   {
     path: "/",
     element: <Home />,
@@ -15,7 +17,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    element: <Dashboard />,
+    element: <Dashboard/>,
   },
   {
     path: "/onboarding",
