@@ -6,19 +6,23 @@ import OnBoarding from "./routes/Onboarding";
 //import Root from "./routes/Root";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {useCookies} from 'react-cookie'
 
+const Main = () => {
 
 const router = createBrowserRouter([
-  
+ 
   {
     path: "/",
     element: <Home />,
     //element: <Root />,
   },
+ 
   {
     path: "/dashboard",
     element: <Dashboard/>,
   },
+  
   {
     path: "/onboarding",
     element: <OnBoarding />,
@@ -30,3 +34,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+
+}
+
+export default Main
